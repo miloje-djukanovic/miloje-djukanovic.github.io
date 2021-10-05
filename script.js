@@ -1,12 +1,8 @@
-let title = document.querySelectorAll( ".subject h4" )
+let title = document.querySelectorAll( ".title" )
 
 on_title_click = () =>
 {
-	console.log( "changed" )
 	let content = event.target.parentNode.querySelector( ".subject_content" );
-
-	console.log( content );
-	console.log( content.style.display );
 
 	if( content.style.display !== "block" )
 	{
@@ -16,6 +12,8 @@ on_title_click = () =>
 	{
 		content.style.display = "none"
 	}
+
+	event.target.classList.toggle( "clicked" );
 }
 
 for( let i = 0; i < title.length; i ++ )
