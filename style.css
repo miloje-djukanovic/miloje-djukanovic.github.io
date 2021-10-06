@@ -13,9 +13,14 @@ h1
 	text-align: center;
 }
 
-.sub_group
+.subjects
 {
-	padding-bottom: 10px; 
+
+}
+
+.invisible
+{
+	display: none;
 }
 
 .content
@@ -26,22 +31,18 @@ h1
 	padding: 30px;
 	margin: auto;
 	background: #ededed;
-}
-
-.links
-{
 	display: flex;
-	width: 100%;
-	align-items: stretch;
+	flex-direction: column;
 }
 
-.links a
+.menu_item
 {
 	flex: 1;
 	text-align: center;
 	text-decoration: none;
 	color: black;
 	font-size: 1.5rem;
+	margin: 0;
 }
 
 h2
@@ -51,8 +52,6 @@ h2
 
 .subject_content
 {
-	display: none;
-	padding: 5px;
 }
 
 .card
@@ -60,7 +59,7 @@ h2
 	font-size: 0.75rem;
 }
 
-.site
+.link
 {
 	font-size: 0.75rem;
 	display: block;
